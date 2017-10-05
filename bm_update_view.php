@@ -61,8 +61,8 @@ if($status==false){
   <div class="jumbotron">
    <fieldset>
     <legend>bookmark更新</legend>
-     <label>書籍名：<input type="text" name="book_name" value="<?=$row["book_name"]?>"></label><br>
-     <label>書籍URL：<input type="text" name="book_url" value="<?=$row["book_url"]?>"></label><br>
+     <label>書籍名：<input type="text" name="book_name" value="<?=$row["book_name"]?>" required></label><br>
+     <label>書籍URL：<input type="text" name="book_url" value="<?=$row["book_url"]?>" required></label><br>
      <label>書籍コメント：<textArea name="book_comment" rows="4" cols="40"><?=$row["book_comment"]?></textArea></label><br>
 	  <input type="hidden" name ="book_id" value="<?= $row["book_id"]?>">
      <input type="submit" value="送信">

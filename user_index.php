@@ -24,9 +24,9 @@
   <div class="jumbotron">
    <fieldset>
     <legend>User登録</legend>
-     <label>ユーザ名：<input type="text" name="name"></label><br>
-     <label>ユーザID：<input type="text" name="lid"></label><br>
-     <label>パスワード：<input type="text" name="lpw"></label><br>
+     <label>ユーザ名：<input type="text" name="name" required></label><br>
+     <label>ユーザID：<input type="text" name="lid" required></label><br>
+     <label>パスワード：<input type="text" name="lpw" required></label><br>
      <input type="submit" value="送信">
     </fieldset>
   </div>

@@ -60,12 +60,12 @@ if($status==false){
 <form method="post" action="user_update.php">
   <div class="jumbotron">
    <fieldset>
-    <legend>User登録</legend>
-     <label>ユーザ名：<input type="text" name="name" value="<?=$row["name"]?>"></label><br>
-     <label>ユーザID：<input type="text" name="lid" value="<?=$row["lid"]?>"></label><br>
-     <label>パスワード：<input type="text" name="lpw" value="<?=$row["lpw"]?>"></label><br>
-     <label>管理フラグ：<input type="text" name="kanri_flg" value="<?=$row["kanri_flg"]?>"></label><br>
-     <label>生存フラグ：<input type="text" name="life_flg" value="<?=$row["life_flg"]?>"></label><br>
+    <legend>User更新</legend>
+     <label>ユーザ名：<input type="text" name="name" value="<?=$row["name"]?>" required></label><br>
+     <label>ユーザID：<input type="text" name="lid" value="<?=$row["lid"]?>" required></label><br>
+     <label>パスワード：<input type="text" name="lpw" value="<?=$row["lpw"]?>" required></label><br>
+     <label>管理フラグ：<input type="text" name="kanri_flg" value="<?=$row["kanri_flg"]?>" required></label><br>
+     <label>生存フラグ：<input type="text" name="life_flg" value="<?=$row["life_flg"]?>" required></label><br>
 	  <input type="hidden" name ="id" value="<?= $row["id"]?>">
      <input type="submit" value="送信">
     </fieldset>
